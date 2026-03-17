@@ -90,14 +90,16 @@
   <nav class="nav">
     <div class="container nav-container">
       <a href="#" class="logo">✝️ AI<span>YHWH</span></a>
-      <div class="nav-links">
-        <a href="#features">Features</a>
-        <a href="#discoveries">Discoveries</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="btn btn-primary">Contact Us</a>
+      <div class="nav-links" id="ay-nav">
+        <a href="#features" onclick="ayClose()">Features</a>
+        <a href="#discoveries" onclick="ayClose()">Discoveries</a>
+        <a href="#about" onclick="ayClose()">About</a>
+        <a href="#contact" class="btn btn-primary" onclick="ayClose()">Contact Us</a>
       </div>
+      <button class="nav-hamburger" id="ay-hbg" aria-label="Menu" onclick="this.classList.toggle('open');document.getElementById('ay-nav').classList.toggle('open')"><span></span><span></span><span></span></button>
     </div>
   </nav>
+  <script>function ayClose(){document.getElementById('ay-nav').classList.remove('open');document.getElementById('ay-hbg').classList.remove('open');}</script>
 
   <section class="hero">
     <div class="container">
