@@ -96,7 +96,7 @@
         <a href="#about" onclick="ayClose()">About</a>
         <a href="#contact" class="btn btn-primary" onclick="ayClose()">Contact Us</a>
       </div>
-      <button class="nav-hamburger" id="ay-hbg" aria-label="Menu" onclick="this.classList.toggle('open');document.getElementById('ay-nav').classList.toggle('open')"><span></span><span></span><span></span></button>
+      <button class="nav-hamburger" id="ay-hbg" aria-label="Menu" onclick="var m=document.getElementById('ay-nav');m.style.top=this.closest('nav').getBoundingClientRect().bottom+'px';this.classList.toggle('open');m.classList.toggle('open')"><span></span><span></span><span></span></button>
     </div>
   </nav>
   <script>function ayClose(){document.getElementById('ay-nav').classList.remove('open');document.getElementById('ay-hbg').classList.remove('open');}</script>
