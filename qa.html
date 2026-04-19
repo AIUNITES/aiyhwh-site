@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VP15KRLV6P"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-VP15KRLV6P');</script>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4573596965267859" crossorigin="anonymous"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hard Questions Answered — AI YHWH Biblical Q&A</title>
+  <meta name="description" content="Honest answers to the hardest biblical questions. Communion and cannibalism, the Trinity, hell, contradictions — answered with scholarly rigor and intellectual honesty.">
+  <meta name="keywords" content="biblical questions answered, is communion cannibalism, hard Bible questions, Christian apologetics, Bible contradictions explained, AI Bible study">
+  <meta name="author" content="AIUNITES">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://aiyhwh.com/qa.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aiyhwh.com/qa.html">
+  <meta property="og:title" content="Hard Questions Answered — AI YHWH Biblical Q&A">
+  <meta property="og:description" content="Honest, rigorous answers to the questions people actually ask about Scripture.">
+  <meta property="og:image" content="https://aiunites.github.io/aiyhwh-site/images/og-image.png">
+  <meta property="og:site_name" content="AI YHWH">
+
+  <meta name="theme-color" content="#7c3aed">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "name": "Hard Biblical Questions Answered",
+    "url": "https://aiyhwh.com/qa.html",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How is communion not cannibalism?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Communion involves bread and wine — physical substances — not flesh and blood. The distinction turns on what Jesus meant by 'This is my body.' Catholics hold to transubstantiation: the substance changes while the accidents (appearance, taste) remain bread. Most Protestants hold to symbolic or spiritual presence. In either case, the act involves no killing, no corpse, no flesh consumed. Cannibalism is the consumption of human flesh taken from a person. The Eucharist, however understood, does not meet that definition."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can one God be three persons?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Trinity does not claim three separate Gods, which would be tritheism. It claims one divine being who eternally exists as three distinct persons sharing one essence. The analogy breaks down quickly with everyday objects — a triangle has three sides but is one shape — because persons are not properties. The doctrine emerged from the data of Scripture: the Father is called God, the Son is called God, the Spirit is called God, yet they speak to each other as distinct. The Trinity is the Church's attempt to hold all three affirmations without contradicting monotheism."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✝️</text></svg>">
+
+  <style>
+    /* ── Q&A page styles ── */
+    .qa-hero {
+      padding: 5rem 0 3rem;
+      text-align: center;
+      position: relative;
+    }
+    .qa-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(124,58,237,.18) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .qa-hero .badge { display: inline-block; padding: 5px 16px; border-radius: 20px; border: 1px solid rgba(124,58,237,.4); color: #a78bfa; font-size: .75rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 1.25rem; }
+    .qa-hero h1 { font-family: 'Crimson Pro', serif; font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 700; line-height: 1.15; margin-bottom: 1rem; }
+    .qa-hero p { color: rgba(255,255,255,.6); font-size: 1.1rem; max-width: 600px; margin: 0 auto 1rem; line-height: 1.7; }
+    .qa-hero .verse { font-family: 'EB Garamond', serif; font-style: italic; color: rgba(255,255,255,.4); font-size: .95rem; margin-top: 1.5rem; }
+
+    /* Category filter */
+    .qa-filter { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin: 2rem 0 3rem; padding: 0 1rem; }
+    .qa-filter button { padding: 7px 18px; border-radius: 20px; border: 1px solid rgba(255,255,255,.15); background: transparent; color: rgba(255,255,255,.55); font-size: .82rem; font-family: 'Inter', sans-serif; cursor: pointer; transition: all .2s; }
+    .qa-filter button:hover { border-color: rgba(124,58,237,.6); color: #a78bfa; }
+    .qa-filter button.active { background: rgba(124,58,237,.2); border-color: #7c3aed; color: #c4b5fd; }
+
+    /* Q&A list */
+    .qa-section { max-width: 820px; margin: 0 auto; padding: 0 1.5rem 5rem; }
+    .qa-item { border-bottom: 1px solid rgba(255,255,255,.07); margin-bottom: 0; }
+    .qa-item:last-child { border-bottom: none; }
+
+    .qa-question {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      padding: 1.6rem 0;
+      cursor: pointer;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      font-family: 'Crimson Pro', serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: rgba(255,255,255,.92);
+      line-height: 1.3;
+      transition: color .2s;
+    }
+    .qa-question:hover { color: #c4b5fd; }
+    .qa-question .q-icon {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: rgba(124,58,237,.2);
+      border: 1px solid rgba(124,58,237,.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .8rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      color: #a78bfa;
+      margin-top: 2px;
+      transition: background .2s;
+    }
+    .qa-question.open .q-icon { background: rgba(124,58,237,.4); }
+    .qa-question .q-arrow {
+      margin-left: auto;
+      flex-shrink: 0;
+      color: rgba(255,255,255,.3);
+      font-size: 1.1rem;
+      transition: transform .3s, color .2s;
+      padding-top: 2px;
+    }
+    .qa-question.open .q-arrow { transform: rotate(180deg); color: #a78bfa; }
+
+    .qa-answer {
+      display: none;
+      padding: 0 0 2rem 2.6rem;
+    }
+    .qa-answer.open { display: block; }
+
+    .qa-answer p {
+      font-family: 'EB Garamond', serif;
+      font-size: 1.1rem;
+      line-height: 1.85;
+      color: rgba(255,255,255,.75);
+      margin-bottom: 1rem;
+    }
+    .qa-answer p:last-child { margin-bottom: 0; }
+
+    .qa-answer .verse-block {
+      border-left: 3px solid rgba(124,58,237,.5);
+      padding: .75rem 1.25rem;
+      margin: 1.25rem 0;
+      background: rgba(124,58,237,.07);
+      border-radius: 0 6px 6px 0;
+    }
+    .qa-answer .verse-block p {
+      font-style: italic;
+      color: rgba(255,255,255,.65);
+      margin: 0 0 .25rem;
+    }
+    .qa-answer .verse-block cite {
+      font-size: .82rem;
+      color: rgba(124,58,237,.8);
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+    }
+
+    .qa-answer .tradition-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: .75rem;
+      margin: 1.25rem 0;
+    }
+    .tradition-card {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 8px;
+      padding: .9rem 1rem;
+    }
+    .tradition-card strong {
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-size: .78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: #a78bfa;
+      margin-bottom: .4rem;
+    }
+    .tradition-card p {
+      font-size: .95rem;
+      margin: 0;
+      color: rgba(255,255,255,.6);
+    }
+
+    .qa-answer .bottom-line {
+      background: rgba(124,58,237,.1);
+      border: 1px solid rgba(124,58,237,.25);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-top: 1.25rem;
+    }
+    .qa-answer .bottom-line strong {
+      font-family: 'Inter', sans-serif;
+      font-size: .75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: #a78bfa;
+      display: block;
+      margin-bottom: .35rem;
+    }
+    .qa-answer .bottom-line p { color: rgba(255,255,255,.8); margin: 0; font-size: 1rem; }
+
+    .category-tag {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-size: .68rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      padding: 2px 9px;
+      border-radius: 4px;
+      margin-bottom: .5rem;
+      background: rgba(124,58,237,.15);
+      color: #a78bfa;
+      vertical-align: middle;
+      margin-left: .5rem;
+    }
+
+    .qa-count { text-align: center; color: rgba(255,255,255,.3); font-size: .82rem; font-family: 'Inter', sans-serif; margin-bottom: 1rem; }
+
+    /* suggest box */
+    .qa-suggest { max-width: 820px; margin: 0 auto 4rem; padding: 0 1.5rem; }
+    .qa-suggest-inner {
+      border: 1px solid rgba(124,58,237,.25);
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      background: rgba(124,58,237,.05);
+    }
+    .qa-suggest h3 { font-family: 'Crimson Pro', serif; font-size: 1.5rem; margin-bottom: .5rem; }
+    .qa-suggest p { color: rgba(255,255,255,.5); font-size: .9rem; margin-bottom: 1.25rem; }
+    .qa-suggest form { display: flex; gap: .5rem; max-width: 480px; margin: 0 auto; }
+    .qa-suggest input {
+      flex: 1;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 8px;
+      padding: .7rem 1rem;
+      color: #fff;
+      font-size: .9rem;
+      font-family: 'Inter', sans-serif;
+      outline: none;
+      transition: border .2s;
+    }
+    .qa-suggest input:focus { border-color: rgba(124,58,237,.6); }
+    .qa-suggest input::placeholder { color: rgba(255,255,255,.3); }
+    .qa-suggest button { padding: .7rem 1.4rem; background: #7c3aed; border: none; border-radius: 8px; color: #fff; font-size: .9rem; font-weight: 600; cursor: pointer; transition: background .2s; white-space: nowrap; }
+    .qa-suggest button:hover { background: #6d28d9; }
+
+    @media (max-width: 600px) {
+      .qa-question { font-size: 1.1rem; }
+      .qa-answer { padding-left: 1.5rem; }
+      .qa-suggest form { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- AIUNITES Webring -->
+  <style>.aiunites-bar{position:fixed;top:0;left:0;right:0;z-index:10000;background:linear-gradient(90deg,#0a0a0f,#1a1a2e);border-bottom:1px solid rgba(99,102,241,.3);padding:8px 0;font-size:12px}.aiunites-bar-content{max-width:1400px;margin:0 auto;padding:0 20px;display:flex;align-items:center;gap:12px;overflow-x:auto;scrollbar-width:none}.aiunites-bar-content::-webkit-scrollbar{display:none}.aiunites-bar a{color:rgba(255,255,255,.7);text-decoration:none;white-space:nowrap;transition:color .2s}.aiunites-bar a:hover{color:#fff}.aiunites-bar-brand{color:#6366f1!important;font-weight:600}.aiunites-bar .current{color:#fff!important;font-weight:600;text-decoration:underline;text-underline-offset:3px;}body{padding-top:36px!important}.nav{top:36px!important}</style>
+  <style>.wb-arrow{display:none;position:fixed;top:0;width:36px;height:33px;align-items:center;justify-content:center;cursor:pointer;z-index:10001;border:none;padding:0;font-size:16px;line-height:1;color:rgba(255,255,255,.8);transition:color .2s,opacity .2s}.wb-arrow:hover{color:#fff}.wb-left{left:0;background:linear-gradient(90deg,#0d0d1a 55%,transparent)}.wb-right{right:0;background:linear-gradient(270deg,#0d0d1a 55%,transparent)}@media(hover:hover)and(pointer:fine){.wb-arrow{display:flex}}</style>
+  <button class="wb-arrow wb-left" id="wb-left" aria-label="Scroll webring left">&#8249;</button>
+  <div class="aiunites-bar"><div class="aiunites-bar-content" id="wb-content"><a href="https://aiunites.com" class="aiunites-bar-brand">&#9670; AIUNITES</a><span style="color:rgba(255,255,255,.2)">|</span><a href="https://aizines.com">AIZines</a><a href="https://aibyjob.com">AIByJob</a><a href="https://redomy.com">Redomy</a><a href="https://videobate.com">VideoBate</a><a href="https://aiunites.github.io/voicestry-site/">VoiceStry</a><a href="https://furnishthings.com">FurnishThings</a><a href="https://bizstry.com">BizStry</a><a href="https://aiyhwh.com" class="current">AI YHWH</a><a href="https://cloudsion.com">Cloudsion</a><a href="https://gameatica.com">Gameatica</a><a href="https://uptownit.com">UptownIT</a><a href="https://inthisworld.com">InThisWorld</a><a href="https://erpise.com">ERPise</a><a href="https://erpize.com">ERPize</a><a href="https://aiunites.github.io/aitsql-site/">AITSQL</a><a href="https://cosmostheopera.com">&#127756; COSMOS</a></div></div>
+  <button class="wb-arrow wb-right" id="wb-right" aria-label="Scroll webring right">&#8250;</button>
+  <script>(function(){var c=document.getElementById('wb-content'),l=document.getElementById('wb-left'),r=document.getElementById('wb-right');if(!c||!l||!r)return;function upd(){var atL=c.scrollLeft<8,atR=c.scrollLeft>=c.scrollWidth-c.clientWidth-8;l.style.opacity=atL?'0':'1';l.style.pointerEvents=atL?'none':'auto';r.style.opacity=atR?'0':'1';r.style.pointerEvents=atR?'none':'auto';}l.onclick=function(){c.scrollBy({left:-220,behavior:'smooth'});};r.onclick=function(){c.scrollBy({left:220,behavior:'smooth'});};c.addEventListener('scroll',upd,{passive:true});upd();})()</script>
+
+  <nav class="nav">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">&#10013;&#65039; AI<span>YHWH</span></a>
+      <div class="nav-links" id="ay-nav">
+        <a href="index.html#features" onclick="ayClose()">Features</a>
+        <a href="index.html#discoveries" onclick="ayClose()">Discoveries</a>
+        <a href="qa.html" style="color:#c4b5fd;font-weight:600;">Q&amp;A</a>
+        <a href="index.html#about" onclick="ayClose()">About</a>
+        <a href="index.html#contact" class="btn btn-primary" onclick="ayClose()">Contact Us</a>
+      </div>
+      <button class="nav-hamburger" id="ay-hbg" aria-label="Menu" onclick="this.classList.toggle('open');document.getElementById('ay-nav').classList.toggle('open')"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <script>function ayClose(){document.getElementById('ay-nav').classList.remove('open');document.getElementById('ay-hbg').classList.remove('open');}</script>
+
+  <!-- Hero -->
+  <section class="qa-hero">
+    <div class="container">
+      <span class="badge">Hard Questions</span>
+      <h1>Questions People Actually Ask<br><span class="gradient-text">Answered Honestly</span></h1>
+      <p>No deflection, no condescension. These are the questions skeptics ask and believers wonder about — answered with Scripture, history, and intellectual honesty.</p>
+      <p class="verse">"Come now, let us reason together, says the LORD." — Isaiah 1:18</p>
+    </div>
+  </section>
+
+  <!-- Filter -->
+  <div class="qa-filter">
+    <button class="active" data-cat="all">All Questions</button>
+    <button data-cat="practice">Christian Practice</button>
+    <button data-cat="doctrine">Doctrine</button>
+    <button data-cat="ethics">Ethics &amp; Morality</button>
+    <button data-cat="contradictions">Apparent Contradictions</button>
+    <button data-cat="history">History &amp; Origins</button>
+  </div>
+
+  <!-- Q&A List -->
+  <div class="qa-section">
+    <div class="qa-count" id="qa-count">17 questions</div>
+
+    <!-- Q1 -->
+    <div class="qa-item" data-cat="practice">
+      <button class="qa-question" onclick="toggleQA(this)">
+        <span class="q-icon">Q</span>
+        <span>How is communion not cannibalism? <span class="category-tag">Practice</span></span>
+        <span class="q-arrow">&#8964;</span>
+      </button>
+      <div class="qa-answer">
+        <p>It's a fair challenge, and it deserves a real answer rather than a dismissive one. Cannibalism is the eating of human flesh taken from a person — it requires a corpse, an act of killing or consumption of an actual body. The Eucharist involves bread and wine. That's the basic fact that makes the analogy break down before it gets started.</p>
+        <p>The more interesting question is what Jesus actually meant when he said "This is my body." Christians have disagreed about this for centuries, and the disagreement is substantive:</p>
+        <div class="tradition-grid">
+          <div class="tradition-card">
+            <strong>Catholic / Orthodox</strong>
+            <p>Transubstantiation: the substance of the bread genuinely becomes Christ's body, while the physical appearance (taste, texture) remains bread. What you receive is Christ, not bread — but no flesh is consumed.</p>
+          </div>
+          <div class="tradition-card">
+            <strong>Lutheran</strong>
+            <p>Sacramental union: Christ's body and blood are truly present "in, with, and under" the bread and wine. Real presence without transubstantiation.</p>
+          </div>
+          <div class="tradition-card">
+            <strong>Reformed / Baptist</strong>
+            <p>Symbolic memorial: the bread and cup represent Christ's body and blood. The presence is spiritual, not physical. "Do this in remembrance of me" is the controlling phrase.</p>
+          </div>
+        </div>
+        <p>In none of these views is a person killed. In none of them is literal flesh consumed. The Catholic and Orthodox traditions, which take "this is my body" most literally, also developed the sophisticated philosophical framework of substance vs. accident precisely to explain why the act does not involve eating human tissue.</p>
+        <div class="verse-block">
+          <p>"While they were eating, Jesus took bread, and when he had given thanks, he broke it and gave it to his disciples, saying, 'Take and eat; this is my body.' Then he took a cup, and when he had given thanks, he gave it to them, saying, 'Drink from it, all of you. This is my blood of the covenant, which is poured out for many for the forgiveness of sins.'"</p>
+          <cite>Matthew 26:26–28</cite>
+        </div>
+        <p>It is worth noting that early Christians were accused of cannibalism by Roman pagans for exactly this reason — the charge is ancient, not modern. The early church responded with the same distinction: the Eucharist is a ritual meal commemorating a sacrifice, not the consumption of flesh. The charge assumed a literal reading that even many Christians would not accept.</p>
+        <div class="bottom-line">
+          <strong>Bottom line</strong>
+          <p>The definition of cannibalism requires actual human flesh. Communion involves bread and wine — or, in Catholic theology, a miraculous transformation with no physical change. Either way, the charge doesn't hold under scrutiny.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="qa-item" data-cat="doctrine">
+      <button class="qa-question" onclick="toggleQA(this)">
+        <span class="q-icon">Q</span>
+        <span>How can one God be three persons? Isn't that just three gods? <span class="category-tag">Doctrine</span></span>
+        <span class="q-arrow">&#8964;</span>
+      </button>
+      <div class="qa-answer">
+        <p>The Trinity is probably the doctrine most often caricatured by critics and poorly explained by defenders. "Three gods" is actually the heresy of tritheism, which the Trinity explicitly rejects. The claim is not three gods. It is one God who exists eternally as three distinct persons sharing one divine essence.</p>
+        <p>The doctrine emerged not from philosophy imposed on Scripture but from the data of Scripture creating a problem that demanded resolution. The New Testament says the Father is God. It calls the Son God — explicitly in John 1:1, John 20:28, Titus 2:13, Hebrews 1:8. It treats the Spirit as God in Acts 5:3–4. Yet it is also thoroughly monotheistic: "Hear O Israel, the LORD our God, the LORD is one" (Deuteronomy 6:4). The Trinity is the attempt to affirm all of that without contradiction.</p>
+        <div class="verse-block">
+          <p>"In the beginning was the Word, and the Word was with God, and the Word was God."</p>
+          <cite>John 1:1</cite>
+        </div>
+        <p>The word "Trinity" does not appear in Scripture. Neither does "incarnation" or "monotheism." That doesn't make the concepts unscriptural — it means the Church needed technical vocabulary to discuss what Scripture taught. The Nicene Creed (325 AD) was not invented to impose Greek philosophy but to rule out specific heresies: Arianism (Jesus is a lesser created being), Sabellianism (Father, Son, Spirit are just three modes of one person), and Tritheism (three separate gods).</p>
+        <p>The best analogy may be the worst one — every comparison fails at some point. Three-leaf clover: three leaves, one clover, but the leaves are not persons. Water in three states: one substance, but it is not simultaneously ice, liquid, and steam. The analogies break down because they describe things, not persons. The Trinity involves three persons in eternal relationship, which has no parallel in the physical world.</p>
+        <div class="bottom-line">
+          <strong>Bottom line</strong>
+          <p>Three gods is tritheism — the opposite of what the Trinity teaches. The doctrine holds one God, three persons, one essence. It is strange and difficult. Christians don't claim otherwise. They claim it is what Scripture requires.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="qa-item" data-cat="ethics">
+      <button class="qa-question" onclick="toggleQA(this)">
+        <span class="q-icon">Q</span>
+        <span>How could a good God send people to hell? <span class="category-tag">Ethics &amp; Morality</span></span>
+        <span class="q-arrow">&#8964;</span>
+      </button>
+      <div class="qa-answer">
+        <p>This question usually contains an embedded assumption worth surfacing: that a good God would override human choice to prevent bad outcomes. But that assumption creates its own problem — a God who overrides choice to ensure goodness would also override the freedom that makes love meaningful.</p>
+        <p>The Christian tradition has offered three broad frameworks for understanding hell:</p>
+        <div class="tradition-grid">
+          <div class="tradition-card">
+            <strong>Eternal Conscious Torment</strong>
+            <p>The traditional majority view: hell is a real place of ongoing punishment. Hell exists because justice is real and sin has infinite weight when committed against an infinite God.</p>
+          </div>
+          <div class="tradition-card">
+            <strong>Annihilationism</strong>
+            <p>The unrighteous cease to exist rather than suffer eternally. Held by some evangelicals and Seventh-day Adventists. Fire consumes rather than torments without end.</p>
+          </div>
+          <div class="tradition-card">
+            <strong>Universal Reconciliation</strong>
+            <p>All are ultimately saved, possibly through post-mortem purification. Held by Origen, some church fathers, and a growing minority today. Hell is remedial, not retributive.</p>
+          </div>
+        </div>
+        <p>What unites most Christian views is that hell is in some sense chosen. C.S. Lewis put it memorably: "The doors of hell are locked on the inside." On this view, God does not arbitrarily condemn people — he honors their sustained rejection of him. The alternative — forcing people who do not want God to be in his presence forever — is not heaven for them either.</p>
+        <div class="verse-block">
+          <p>"The Lord is not slow in keeping his promise, as some understand slowness. Instead he is patient with you, not wanting anyone to perish, but everyone to come to repentance."</p>
+          <cite>2 Peter 3:9</cite>
+        </div>
+        <div class="bottom-line">
+          <strong>Bottom line</strong>
+          <p>The question assumes a definition of "good" that eliminates human freedom. Most Christian accounts of hell ground it in justice, not cruelty, and many argue it is ultimately the fulfillment of a person's own persistent choice.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="qa-item" data-cat="contradictions">
+      <button class="qa-question" onclick="toggleQA(this)">
+        <span class="q-icon">Q</span>
+        <span>Does the Bible contradict itself? <span class="category-tag">Apparent Contradictions</span></span>
+        <span class="q-arrow">&#8964;</span>
+      </button>
+      <div class="qa-answer">
+        <p>The honest answer is: some passages are genuinely difficult to harmonize, and many alleged contradictions dissolve under careful reading. Both things are true simultaneously.</p>
+        <p>Many "contradictions" turn out to be complementary perspectives. The Gospels give different details of the resurrection morning — Matthew mentions one angel, John mentions two. This is consistent with the way eyewitness accounts work. Luke's genealogy of Jesus differs from Matthew's because they likely trace different lines (Joseph's legal lineage vs. Mary's biological line, or Solomon's line vs. Nathan's line in the Davidic tree).</p>
+        <p>Other tensions are genuine and have generated centuries of debate. Did Judas die by hanging (Matthew 27:5) or by falling headlong in a field (Acts 1:18)? The traditional harmonization is that he hanged himself and later fell — possible, but the text doesn't say that. The honest position acknowledges the difficulty.</p>
+        <div class="verse-block">
+          <p>"All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness."</p>
+          <cite>2 Timothy 3:16</cite>
+        </div>
+        <p>The doctrine of inspiration does not require verbatim identical accounts of the same event. Most evangelical scholars hold that inspiration guarantees that Scripture teaches truth, not that it gives identical verbatim reports. Ancient historians were not writing to modern standards of precision — they wrote with theological purpose, selective detail, and a different understanding of quotation.</p>
+        <div class="bottom-line">
+          <strong>Bottom line</strong>
+          <p>Many alleged contradictions are not contradictions on careful reading. Some are genuinely difficult. The Bible is a library of 66 books written across 1,500 years by 40 authors — exact uniformity of detail is not what Scripture claims for itself.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="qa-item" data-cat="ethics">
+      <button class="qa-question" onclick="toggleQA(this)">
+        <span class="q-icon">Q</span>
+        <span>Why does the Old Testament God seem so violent compared to Jesus? <span class="category-tag">Ethics &amp; Morality</span></span>
+        <span class="q-arrow">&#8964;</span>
+      </button>
+      <div class="qa-answer">
+        <p>This is Marcion's question — a 2nd century heretic who solved it by declaring the Old Testament God a different, inferior deity. The Church rejected this as heresy, but that doesn't make the question go away.</p>
+        <p>Several frameworks have been proposed. Progressive revelation holds that God accommodated to the moral understanding of ancient peoples and revealed his character incrementally — the full picture comes with Jesus. The commands to exterminate Canaanite nations were specific, historical, and bounded, not a permanent model for conduct. Jesus himself escalated the demands of the law: not just "do not murder" but "do not be angry without cause."</p>
+        <p>The conquest narratives are the hardest cases. God commands the killing of the Amalekites, including women and children. Most contemporary scholars — Christian and Jewish — acknowledge the difficulty rather than explaining it away. Some argue the accounts are hyperbolic military rhetoric common in ancient Near Eastern writing, where "utterly destroy" was a conventional phrase that didn't mean literal extinction. Others argue God's judgment of nations is real and just in ways human justice cannot fully be.</p>
+        <div class="verse-block">
+          <p>"Jesus Christ is the same yesterday and today and forever."</p>
+          <cite>Hebrews 13:8</cite>
+        </div>
+        <p>What the New Testament does not do is present a gentle Jesus who never speaks of judgment. Jesus teaches more about hell than any other figure in Scripture. He overturns tables in the Temple. He calls the Pharisees a brood of vipers. The "gentle Jesus" reading of the Gospels requires selective reading.</p>
+        <div class="bottom-line">
+          <strong>Bottom line</strong>
+          <p>The tension is real and the question deserves better than dismissal. The Christian answer is that the full character of God — holy, just, and merciful — is present in both Testaments, and that Jesus does not replace the Old Testament God but fulfills and illuminates him.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="qa-item" data-cat="history">
+      <button class="qa-question" onclick="toggleQA(this)">
+        <span class="q-icon">Q</span>
+        <span>Wasn't Christianity just borrowed from earlier pagan religions? <span class="category-tag">History &amp; Origins</span></span>
+        <span class="q-arrow">&#8964;</span>
+      </button>
+      <div class="qa-answer">
+        <p>This claim circulates widely online, most popularly in the film "Zeitgeist" (2007), which argued that Jesus was copied from Horus, Osiris, Mithras, and Dionysus. Mainstream scholarship — including secular scholars with no theological stake — largely rejects these specific comparisons as unsupported or badly distorted.</p>
+        <p>The claimed parallels don't hold up under scrutiny. Horus was not born of a virgin on December 25th, did not have 12 disciples, was not crucified, and did not rise on the third day. These details were either invented or represent gross misreadings of Egyptian texts. The academic consensus across Egyptology, classical studies, and religious history is that the "copycat thesis" is not credible as popularly stated.</p>
+        <p>That said, early Christianity did exist in a Greco-Roman world saturated with mystery cults, dying-and-rising deity myths, and apocalyptic Jewish sects. Scholars like N.T. Wright argue that Christian claims about resurrection emerged from a specifically Jewish context, not from pagan influence — a bodily resurrection at the end of history was a Jewish expectation, not a pagan one.</p>
+        <div class="verse-block">
+          <p>"For what I received I passed on to you as of first importance: that Christ died for our sins according to the Scriptures, that he was buried, that he was raised on the third day according to the Scriptures."</p>
+          <cite>1 Corinthians 15:3–4</cite>
+        </div>
+        <p>Paul's account in 1 Corinthians 15 — written within 20 years of the crucifixion, citing a creed that likely dates to within 5 years — is the earliest Christian document about the resurrection. The scholarly debate about Christian origins is ongoing and serious. The "Zeitgeist" version is not the scholarly debate.</p>
+        <div class="bottom-line">
+          <strong>Bottom line</strong>
+          <p>The specific pagan-copycat claims are not supported by mainstream scholarship. Christianity developed from a Jewish matrix, not pagan mystery religion. The question of how much its later forms absorbed from Hellenistic culture is a legitimate scholarly conversation.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="qa-item" data-cat="practice">
+      <button class="qa-question" onclick="toggleQA(this)">
+        <span class="q-icon">Q</span>
+        <span>Why do Christians eat pork and wear blended fabrics if the Old Testament forbids it? <span class="category-tag">Practice</span></span>
+        <span class="q-arrow">&#8964;</span>
+      </button>
+      <div class="qa-answer">
+        <p>This is actually one of the most intellectually coherent challenges to Christian practice, and it deserves a real answer rather than hand-waving. Christians claim to follow the Bible, yet they ignore significant portions of Leviticus. Why?</p>
+        <p>The standard Christian answer draws on a distinction within Old Testament law between three categories: ceremonial law (dietary rules, sacrificial systems, purity codes), civil law (laws governing the Israelite theocratic state), and moral law (the Ten Commandments and ethical principles). Christians argue that the ceremonial and civil law were temporary, designed for a specific people at a specific time, and fulfilled in Christ. The moral law remains binding.</p>
+        <p>This is not a post-hoc rationalization — it is grounded in the New Testament itself. Acts 10 has Peter receiving a vision in which God declares all foods clean. Mark 7:19 notes that Jesus "declared all foods clean." Romans 14 and Colossians 2:16–17 explicitly address food laws and Sabbath observance as no longer binding on Gentile Christians.</p>
+        <div class="verse-block">
+          <p>"Therefore do not let anyone judge you by what you eat or drink, or with regard to a religious festival, a New Moon celebration or a Sabbath day. These are a shadow of the things that were to come; the reality, however, is found in Christ."</p>
+          <cite>Colossians 2:16–17</cite>
+        </div>
+        <p>Jewish law functions differently — the Torah remains binding on Jews because the covenant relationship it governs is not canceled. The New Testament's claim is not that the Old Testament was wrong but that it pointed forward to something that has now arrived, changing the terms of the covenant for those who receive it.</p>
+        <div class="bottom-line">
+          <strong>Bottom line</strong>
+          <p>Christians don't ignore the Old Testament arbitrarily — the New Testament itself makes explicit distinctions about which laws apply to followers of Jesus. It's a theological framework, not inconsistency.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="qa-item" data-cat="doctrine">
+      <button class="qa-question" onclick="toggleQA(this)">
+        <span class="q-icon">Q</span>
+        <span>If God is all-knowing, why did he create people he knew would go to hell? <span class="category-tag">Doctrine</span></span>
+        <span class="q-arrow">&#8964;</span>
+      </button>
+      <div class="qa-answer">
+        <p>This is the problem of divine foreknowledge and human freedom compressed into one question. It has occupied philosophers and theologians for millennia, and there is no solution that doesn't create some tension.</p>
+        <p>The main theological positions:</p>
+        <div class="tradition-grid">
+          <div class="tradition-card">
+            <strong>Calvinist (Reformed)</strong>
+            <p>God predestines some to salvation and others to damnation. His sovereignty is absolute. The "vessels of wrath" glorify God by demonstrating his justice. Paul addresses this directly in Romans 9.</p>
+          </div>
+          <div class="tradition-card">
+            <strong>Arminian</strong>
+            <p>God foreknows but does not foreordain. Foreknowledge is not causation. God sees what free agents will choose without causing those choices. He creates because the reality includes genuine love freely given.</p>
+          </div>
+          <div class="tradition-card">
+            <strong>Open Theism</strong>
+            <p>God does not exhaustively foreknow free choices. His knowledge grows with time. This preserves libertarian free will but requires limiting divine omniscience — a minority position considered heretical by most traditions.</p>
+          </div>
+        </div>
+        <p>The Arminian answer is perhaps most intuitive: a world with genuine freedom and genuine love is worth creating even knowing that freedom will be misused. Every parent who has a child faces a version of this — you know suffering is possible, perhaps certain, and you create life anyway because love and existence are worth the risk.</p>
+        <div class="bottom-line">
+          <strong>Bottom line</strong>
+          <p>This question presses on one of theology's genuinely hard problems. Christians disagree about the answer. What most agree on is that God's decision to create reflects his judgment that love and freedom are worth the cost — a judgment he himself paid in the incarnation.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q9 -->
+    <div class="qa-item" data-cat="contradictions">
+      <button class="qa-question" onclick="toggleQA(this)">
+        <span class="q-icon">Q</span>
+        <span>Was Jesus real? Is there historical evidence outside the Bible? <span class="category-tag">Apparent Contradictions</span></span>
+        <span class="q-arrow">&#8964;</span>
+      </button>
+      <div class="qa-answer">
+        <p>Yes, Jesus of Nazareth is considered a historical figure by virtually all secular historians of antiquity. The "mythicist" position — that Jesus never existed — is a fringe view not held by credentialed scholars in the relevant fields, including atheist and agnostic historians.</p>
+        <p>The primary non-Christian sources:</p>
+        <div class="tradition-grid">
+          <div class="tradition-card">
+            <strong>Tacitus (115 AD)</strong>
+            <p>Describes Nero blaming Christians for the Rome fire. Notes that "Christus, from whom the name had its origin, suffered the extreme penalty during the reign of Tiberius at the hands of one of our procurators, Pontius Pilatus."</p>
+          </div>
+          <div class="tradition-card">
+            <strong>Josephus (93 AD)</strong>
+            <p>The Jewish Antiquities contains two references. The longer one (Testimonium Flavianum) is likely partially interpolated by later Christians, but most scholars believe a core authentic reference underlies it. A shorter reference to "James the brother of Jesus called Christ" is generally accepted as authentic.</p>
+          </div>
+          <div class="tradition-card">
+            <strong>Pliny the Younger (112 AD)</strong>
+            <p>Writes to Trajan about Christians in Bithynia who "sing hymns to Christ as to a god" — confirming an early high Christology within 80 years of the crucifixion.</p>
+          </div>
+        </div>
+        <p>The historical consensus is that Jesus was a Jewish teacher who was crucified under Pontius Pilate in approximately 30 AD, and that his followers proclaimed him risen from the dead. The question of whether he actually rose is a theological and historical question on which historians disagree — but the existence of the person is not seriously disputed.</p>
+        <div class="bottom-line">
+          <strong>Bottom line</strong>
+          <p>Jesus' historical existence is attested by multiple independent non-Christian sources within a century of his death. No credentialed ancient historian disputes it.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="qa-item" data-cat="ethics">
+      <button class="qa-question" onclick="toggleQA(this)">
+        <span class="q-icon">Q</span>
+        <span>How does prayer change anything if God already has a plan? <span class="category-tag">Ethics &amp; Morality</span></span>
+        <span class="q-arrow">&#8964;</span>
+      </button>
+      <div class="qa-answer">
+        <p>This question assumes that a fixed divine plan and effective prayer are mutually exclusive. But that depends on what "plan" means. If prayer is one of the means by which God works out his purposes — if he chose to act in certain ways through the prayers of his people — then prayer can be effective without God being surprised by it.</p>
+        <p>The analogy of secondary causes is useful: God works through natural processes (rain, seeds, photosynthesis) to feed people. No one argues that farming is pointless because God controls outcomes. Prayer may function similarly — a real cause that God chose to incorporate into his providence.</p>
+        <div class="verse-block">
+          <p>"You do not have because you do not ask God. When you ask, you do not receive, because you ask with wrong motives."</p>
+          <cite>James 4:2–3</cite>
+        </div>
+        <p>Jesus teaches persistent prayer as meaningful — the parables of the persistent widow and the friend at midnight both commend continued asking. This doesn't make God a vending machine; it places prayer in the context of relationship. You ask not to inform God of something he doesn't know but to align yourself with him and participate in what he is doing.</p>
+        <p>Prayer also functions formatively. Whether or not a specific request is granted, the act of prayer changes the person praying — orienting attention, cultivating trust, acknowledging dependence. These outcomes don't depend on God "changing his mind."</p>
+        <div class="bottom-line">
+          <strong>Bottom line</strong>
+          <p>Prayer can be real and effective within a providential framework if God chose to act through prayer as a genuine cause. The question assumes a model of divine planning that most Christian traditions don't actually hold.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q11 -->
+    <div class="qa-item" data-cat="doctrine">
+      <button class="qa-question" onclick="toggleQA(this)">
+        <span class="q-icon">Q</span>
+        <span>What happens to people who never heard of Jesus? <span class="category-tag">Doctrine</span></span>
+        <span class="q-arrow">&#8964;</span>
+      </button>
+      <div class="qa-answer">
+        <p>This is one of the most pastorally urgent theological questions and one where thoughtful Christians hold genuinely different views. The stakes are high: it bears directly on whether God is just, and on what missionaries are actually doing.</p>
+        <div class="tradition-grid">
+          <div class="tradition-card">
+            <strong>Exclusivism</strong>
+            <p>Explicit faith in Christ is necessary for salvation. Those who haven't heard are lost, which is precisely what makes evangelism urgent. Held by most historic Protestant and Catholic theologians.</p>
+          </div>
+          <div class="tradition-card">
+            <strong>Inclusivism</strong>
+            <p>Christ is the only means of salvation, but it can be applied to those who respond faithfully to the revelation they have (creation, conscience). C.S. Lewis held a version of this. Vatican II moved in this direction.</p>
+          </div>
+          <div class="tradition-card">
+            <strong>Universalism</strong>
+            <p>All are ultimately saved, whether through post-mortem encounter with Christ or universal reconciliation. A minority view throughout Christian history, with renewed interest today.</p>
+          </div>
+        </div>
+        <div class="verse-block">
+          <p>"For since the creation of the world God's invisible qualities — his eternal power and divine nature — have been clearly seen, being understood from what has been made, so that people are without excuse."</p>
+          <cite>Romans 1:20</cite>
+        </div>
+        <p>Romans 2:14–16 complicates the exclusivist picture by suggesting Gentiles who don't have the law "show the work of the law written on their hearts." Most evangelical scholars argue this refers to judgment, not salvation — but the text has supported inclusivist readings for centuries.</p>
+        <div class="bottom-line">
+          <strong>Bottom line</strong>
+          <p>This question has no clean answer within Christianity. What nearly all traditions agree on is that God is just, that he does not condemn people for what they could not know, and that responding faithfully to whatever revelation one has matters.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q12 -->
+    <div class="qa-item" data-cat="history">
+      <button class="qa-question" onclick="toggleQA(this)">
+        <span class="q-icon">Q</span>
+        <span>Didn't Constantine invent Christianity at the Council of Nicaea? <span class="category-tag">History &amp; Origins</span></span>
+        <span class="q-arrow">&#8964;</span>
+      </button>
+      <div class="qa-answer">
+        <p>This claim, popularized by The Da Vinci Code, is not supported by the historical evidence. The Council of Nicaea (325 AD) did not create the Bible, did not vote on the divinity of Jesus, and did not invent Christianity. It addressed a specific theological dispute about the relationship of the Son to the Father (the Arian controversy).</p>
+        <p>The canon of Scripture was not decided at Nicaea. The New Testament canon was recognized — not created — gradually through a process that was largely complete before Nicaea. The letters of Paul were circulating and being cited as Scripture within decades of being written (2 Peter 3:16 refers to Paul's letters as Scripture). The four Gospels are attested in the 2nd century by Irenaeus, Justin Martyr, and others.</p>
+        <p>Constantine did not vote at Nicaea. He presided over the opening ceremony and had a political interest in theological unity, but the theological decisions were made by bishops. The outcome — the Nicene Creed's affirmation that the Son is "of the same substance" as the Father — was controversial precisely because it was not unanimous. Arianism had significant support. Constantine himself was baptized by an Arian bishop.</p>
+        <div class="verse-block">
+          <p>"What was from the beginning, which we have heard, which we have seen with our eyes, which we have looked at and our hands have touched — this we proclaim concerning the Word of life."</p>
+          <cite>1 John 1:1</cite>
+        </div>
+        <div class="bottom-line">
+          <strong>Bottom line</strong>
+          <p>The "Constantine invented Christianity" claim fails basic historical scrutiny. Christian communities, theology, and writings predate Constantine by 250+ years. Nicaea was a dispute about existing doctrine, not the creation of it.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q13 -->
+    <div class="qa-item" data-cat="practice">
+      <button class="qa-question" onclick="toggleQA(this)">
+        <span class="q-icon">Q</span>
+        <span>Why does the Bible endorse slavery? <span class="category-tag">Practice</span></span>
+        <span class="q-arrow">&#8964;</span>
+      </button>
+      <div class="qa-answer">
+        <p>The Bible does not endorse modern chattel slavery, though it does regulate various forms of servitude that existed in the ancient world. The distinction matters — but so does the honest acknowledgment that the Bible was used, wrongly, to defend American slavery for centuries.</p>
+        <p>The Hebrew eved (usually translated "slave") referred to multiple different social arrangements — debt servitude, household service, prisoners of war, and voluntary service. The Mosaic law placed significant restrictions: killing a slave was punishable (Exodus 21:20), a slave who lost a tooth or eye was to be freed (Exodus 21:26–27), Hebrew slaves were released in the seventh year, and escaped slaves were not to be returned (Deuteronomy 23:15). These provisions were significantly more humane than surrounding cultures.</p>
+        <p>The New Testament presents a more ambiguous picture. Paul's letter to Philemon, which concerns a runaway slave named Onesimus, is a masterpiece of implicit pressure for freedom without demanding it. He calls Onesimus "my son" and "dear to me," sends him back to Philemon "no longer as a slave, but better than a slave, as a dear brother" — a clear implication of manumission without command. But Ephesians 6:5 ("Slaves, obey your masters") was taken from context to justify chattel slavery in ways that ignore the letter's overall ethic.</p>
+        <div class="verse-block">
+          <p>"There is neither Jew nor Gentile, neither slave nor free, nor is there male and female, for you are all one in Christ Jesus."</p>
+          <cite>Galatians 3:28</cite>
+        </div>
+        <p>The abolitionist movement was largely driven by Scripture — Quakers, evangelicals, and many who argued that the image of God in every person and the radical equality of Galatians 3:28 were incompatible with slavery. The argument that Scripture "endorses" slavery ignores this entire tradition.</p>
+        <div class="bottom-line">
+          <strong>Bottom line</strong>
+          <p>The Bible regulates rather than endorses ancient servitude, which differed significantly from chattel slavery. Its core principles — the dignity of every person made in God's image, equality in Christ — ultimately became the foundation of abolitionism.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q14 -->
+    <div class="qa-item" data-cat="doctrine">
+      <button class="qa-question" onclick="toggleQA(this)">
+        <span class="q-icon">Q</span>
+        <span>If miracles violate the laws of nature, why should anyone believe in them? <span class="category-tag">Doctrine</span></span>
+        <span class="q-arrow">&#8964;</span>
+      </button>
+      <div class="qa-answer">
+        <p>This objection, classically formulated by David Hume, has a significant problem at its core: it assumes what it needs to prove. The argument is that no testimony for a miracle can be credible because miracles are impossible. But their impossibility is not established — it is assumed. The argument is circular.</p>
+        <p>The laws of nature describe the regular behavior of the universe when no extraordinary cause is acting. If God exists — an entity capable of creating the universe — then acting within it in extraordinary ways is coherent. Miracles are not violations of natural law from within; they are interventions by a cause outside the natural order. The question of whether miracles have occurred is therefore not a scientific question (science studies regular patterns) but a historical one.</p>
+        <p>The historical question about the resurrection specifically is vigorously debated. The minimal facts that nearly all historians accept: Jesus was crucified and buried, his tomb was found empty by Sunday morning, disciples reported seeing him alive, and the disciples underwent a transformation from fear to willingness to die for the claim. The debate is over what best explains those facts. Christians claim resurrection explains them better than alternatives.</p>
+        <div class="verse-block">
+          <p>"If Christ has not been raised, your faith is futile; you are still in your sins."</p>
+          <cite>1 Corinthians 15:17</cite>
+        </div>
+        <p>Paul is unusually clear here: Christianity stands or falls on the resurrection being historically true. He is not offering a metaphor or a spiritual truth — he is making a claim about an event. He says this 20 years after the alleged event, naming eyewitnesses still alive who could be questioned.</p>
+        <div class="bottom-line">
+          <strong>Bottom line</strong>
+          <p>Hume's objection assumes miracles are impossible, which is the conclusion, not the premise. Whether specific miracles occurred is a historical question. The resurrection's evidential case is stronger than most critics acknowledge.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q15 -->
+    <div class="qa-item" data-cat="ethics">
+      <button class="qa-question" onclick="toggleQA(this)">
+        <span class="q-icon">Q</span>
+        <span>How can you get morality from the Bible when it commands terrible things? <span class="category-tag">Ethics &amp; Morality</span></span>
+        <span class="q-arrow">&#8964;</span>
+      </button>
+      <div class="qa-answer">
+        <p>This challenge cuts both ways: the Bible is critiqued for containing moral horrors, but the critique itself relies on a moral standard. Where does that standard come from? If moral realism is true — if some things really are wrong regardless of culture or opinion — then that is evidence for a moral lawgiver of the kind the Bible describes.</p>
+        <p>The specific difficult passages deserve honest engagement rather than deflection. God commands genocide of Canaanite peoples. Daughters are given as rewards. Rape victims are married to their rapists. These are real texts. The responses Christians offer vary: some are hyperbolic ancient rhetoric; some are temporary civil laws for a specific theocratic context; some are descriptive (the Bible records what happened, not what was approved); and some genuinely require grappling with the difference between ancient and modern moral understanding.</p>
+        <p>What the Bible does that ancient moral systems rarely do: it prohibits oppression of foreigners, commands care for the poor, widow, and orphan, ascribes dignity to every human being as image-bearers of God, and culminates in a figure who says "love your enemies" — one of the most radical ethical commands in history. Whatever else one thinks of it, the moral vision of the Sermon on the Mount has no obvious parallel in ancient ethics.</p>
+        <div class="verse-block">
+          <p>"He has shown you, O mortal, what is good. And what does the LORD require of you? To act justly and to love mercy and to walk humbly with your God."</p>
+          <cite>Micah 6:8</cite>
+        </div>
+        <div class="bottom-line">
+          <strong>Bottom line</strong>
+          <p>The difficult texts are real and deserve honest engagement. The moral vision of Scripture, taken as a whole and culminating in Jesus, remains one of the most demanding and compelling ethical frameworks in history.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q16 -->
+    <div class="qa-item" data-cat="history">
+      <button class="qa-question" onclick="toggleQA(this)">
+        <span class="q-icon">Q</span>
+        <span>How was the Bible compiled? Who decided what's in it? <span class="category-tag">History &amp; Origins</span></span>
+        <span class="q-arrow">&#8964;</span>
+      </button>
+      <div class="qa-answer">
+        <p>The canon of Scripture was recognized through a gradual historical process, not invented at a single council. Understanding this process matters because it shapes how one understands the authority of Scripture.</p>
+        <p>For the Old Testament, the Hebrew Bible (Tanakh) was largely fixed by the end of the first century AD. The Council of Jamnia (ca. 90 AD) is sometimes cited as the moment of closure, but the evidence for a formal decision there is thin. The major sections — Torah, Prophets, Writings — were treated as authoritative long before any formal decision.</p>
+        <p>For the New Testament, the process was longer. The criteria used by early church leaders: apostolic origin (written by an apostle or apostolic associate), orthodox teaching (consistent with what had been received), and widespread use in churches. Most of the 27 books were uncontested. Disputed books included Hebrews (authorship uncertain), James, 2 Peter, 2–3 John, Jude, and Revelation.</p>
+        <p>The first known list exactly matching the modern Protestant New Testament canon appears in Athanasius' Easter Letter of 367 AD. The Councils of Hippo (393) and Carthage (397) confirmed this list for the Western church. The Eastern church came to the same canon through a separate process.</p>
+        <div class="verse-block">
+          <p>"For prophecy never had its origin in the human will, but prophets, though human, spoke from God as they were carried along by the Holy Spirit."</p>
+          <cite>2 Peter 1:21</cite>
+        </div>
+        <p>The Catholic Bible includes additional books (Deuterocanonicals / Apocrypha) that were part of the Greek Septuagint used by early Christians. The Protestant Reformers returned to the shorter Hebrew canon.</p>
+        <div class="bottom-line">
+          <strong>Bottom line</strong>
+          <p>The canon was recognized, not invented — a process of the Church discerning which books were already functioning as authoritative Scripture. The process took centuries and involved real debate, which is consistent with taking it seriously rather than treating it as arbitrary.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q17 -->
+    <div class="qa-item" data-cat="practice">
+      <button class="qa-question" onclick="toggleQA(this)">
+        <span class="q-icon">Q</span>
+        <span>Why are there so many denominations? Doesn't that prove Christianity is made up? <span class="category-tag">Practice</span></span>
+        <span class="q-arrow">&#8964;</span>
+      </button>
+      <div class="qa-answer">
+        <p>The existence of disagreement about a subject does not prove the subject has no right answers. Philosophy has thousands of competing schools; that doesn't mean truth doesn't exist. Medicine disagrees on treatment protocols; that doesn't mean health is an illusion. The argument from disagreement proves too much.</p>
+        <p>What the proliferation of denominations does demonstrate is that reasonable people can read the same texts and reach different conclusions on secondary and tertiary matters. Christians have always agreed on the core: the Apostles' Creed, the authority of Scripture, the person and work of Christ. They have disagreed on how to organize churches, how to understand baptism, whether spiritual gifts continue, how to interpret prophecy, and what the Lord's Supper means.</p>
+        <p>The early church had significant internal disagreements that are visible in the New Testament itself. Paul confronts Peter publicly (Galatians 2). Acts 15 describes a council to resolve controversy about Gentiles. 1 Corinthians addresses a church deeply divided. Theological complexity and human disagreement are not signs of invention — they are signs of a living tradition taking ideas seriously.</p>
+        <div class="verse-block">
+          <p>"There is one body and one Spirit, just as you were called to one hope when you were called; one Lord, one faith, one baptism; one God and Father of all."</p>
+          <cite>Ephesians 4:4–6</cite>
+        </div>
+        <p>The unity Paul envisions in Ephesians 4 was not institutional uniformity but shared foundation. The Eastern and Western churches, despite their split in 1054, would both affirm the same creeds. Most Protestant denominations, despite their differences, would affirm the same Gospel. The ecumenical core is broader and more stable than the denominational map suggests.</p>
+        <div class="bottom-line">
+          <strong>Bottom line</strong>
+          <p>Disagreement about secondary matters doesn't disprove the central claims. All major Christian traditions share a common core. The variety reflects human complexity engaging with deep ideas, not evidence of fabrication.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Suggest a Question -->
+  <div class="qa-suggest">
+    <div class="qa-suggest-inner">
+      <h3>Have a Question We Haven't Answered?</h3>
+      <p>Submit it and we'll add a rigorous answer to the list.</p>
+      <form id="suggest-form">
+        <input type="text" placeholder="Ask your question..." maxlength="200" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo">&#10013;&#65039; AI<span>YHWH</span></span>
+          <p>AI-Powered Biblical Discoveries</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html#features">Features</a>
+          <a href="index.html#discoveries">Discoveries</a>
+          <a href="qa.html">Q&amp;A</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 AI YHWH. A product of <a href="https://aiunites.com">AIUNITES</a></p>
+        <div class="footer-legal" style="margin-top:8px;">
+          <a href="https://aiunites.com/legal.html#privacy" style="color:rgba(255,255,255,0.5);margin:0 8px;">Privacy Policy</a>
+          <a href="https://aiunites.com/legal.html#terms" style="color:rgba(255,255,255,0.5);margin:0 8px;">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQUi49AdTBRjetz5MDFQgMIkm9-vOMb_ARKwYEz41j_Nfiwg/viewform?usp=pp_url&entry.2053726945=AI+YHWH" target="_blank" class="help-fab">&#128172; Help / Feedback</a>
+  <style>.help-fab{position:fixed;bottom:24px;right:24px;width:auto;padding:0 16px;height:48px;background:linear-gradient(135deg,#7c3aed,#4f46e5);border-radius:24px;display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#fff;text-decoration:none;box-shadow:0 4px 20px rgba(124,58,237,0.4);transition:all 0.3s;z-index:9999;}.help-fab:hover{transform:scale(1.05);}</style>
+
+  <script>
+    // Toggle Q&A open/close
+    function toggleQA(btn) {
+      const answer = btn.nextElementSibling;
+      const isOpen = btn.classList.contains('open');
+      // Close all
+      document.querySelectorAll('.qa-question.open').forEach(q => {
+        q.classList.remove('open');
+        q.nextElementSibling.classList.remove('open');
+      });
+      // Open this one if it was closed
+      if (!isOpen) {
+        btn.classList.add('open');
+        answer.classList.add('open');
+        setTimeout(() => btn.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 50);
+      }
+    }
+
+    // Category filter
+    document.querySelectorAll('.qa-filter button').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.qa-filter button').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        const cat = this.dataset.cat;
+        let count = 0;
+        document.querySelectorAll('.qa-item').forEach(item => {
+          const show = cat === 'all' || item.dataset.cat === cat;
+          item.style.display = show ? '' : 'none';
+          if (show) count++;
+        });
+        document.getElementById('qa-count').textContent = count + ' question' + (count !== 1 ? 's' : '');
+      });
+    });
+
+    // Suggest form
+    document.getElementById('suggest-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const q = this.querySelector('input').value;
+      const btn = this.querySelector('button');
+      fetch('https://docs.google.com/forms/d/e/1FAIpQLSeQUi49AdTBRjetz5MDFQgMIkm9-vOMb_ARKwYEz41j_Nfiwg/formResponse?entry.904300305=' + encodeURIComponent('Q&A suggestion: ' + q) + '&entry.2053726945=AI_YHWH_QA', { method:'POST', mode:'no-cors' });
+      btn.textContent = '&#10003; Submitted!';
+      btn.style.background = '#10b981';
+      this.querySelector('input').value = '';
+      setTimeout(() => { btn.textContent = 'Submit'; btn.style.background = ''; }, 3000);
+    });
+
+    // Auto-open first question
+    document.querySelector('.qa-question').click();
+  </script>
+
+</body>
+</html>
